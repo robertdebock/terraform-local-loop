@@ -30,4 +30,6 @@ output "foreach" {
   }
 }
 
-
+output "splat" {
+  value = data.local_file.foreach[*]
+}

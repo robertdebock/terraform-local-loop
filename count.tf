@@ -13,6 +13,6 @@ data "local_file" "default" {
 }
 
 # You can show attributes of counted resources by using the 'splat' expression.
-output "content" {
+output "count" {
   value = data.local_file.default[*].content
 }
